@@ -91,76 +91,44 @@ export default function Contact() {
 
         {/* Additional Info Section */}
         <section className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              <div>
-                <h2 className="text-2xl font-bold mb-6">Why Choose Our Services?</h2>
-                <ul className="space-y-4">
-                  <li className="flex items-start">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h2 className="text-3xl font-bold mb-12">Why Choose Our Services?</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="text-left">
+                  <div className="flex items-start">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2"></div>
                     <div>
-                      <h3 className="font-semibold">Free Consultation & Quote</h3>
+                      <h3 className="font-semibold mb-2">Free Consultation & Quote</h3>
                       <p className="text-secondary">Get a detailed assessment and transparent pricing for your project</p>
                     </div>
-                  </li>
-                  <li className="flex items-start">
+                  </div>
+                </div>
+                <div className="text-left">
+                  <div className="flex items-start">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2"></div>
                     <div>
-                      <h3 className="font-semibold">Quick Response Time</h3>
+                      <h3 className="font-semibold mb-2">Quick Response Time</h3>
                       <p className="text-secondary">We respond to all inquiries within 24 hours</p>
                     </div>
-                  </li>
-                  <li className="flex items-start">
+                  </div>
+                </div>
+                <div className="text-left">
+                  <div className="flex items-start">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2"></div>
                     <div>
-                      <h3 className="font-semibold">Professional Team</h3>
+                      <h3 className="font-semibold mb-2">Professional Team</h3>
                       <p className="text-secondary">Experienced and certified technicians for all services</p>
                     </div>
-                  </li>
-                  <li className="flex items-start">
+                  </div>
+                </div>
+                <div className="text-left">
+                  <div className="flex items-start">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2"></div>
                     <div>
-                      <h3 className="font-semibold">Quality Guarantee</h3>
+                      <h3 className="font-semibold mb-2">Quality Guarantee</h3>
                       <p className="text-secondary">All work comes with warranty and quality assurance</p>
                     </div>
-                  </li>
-                </ul>
-              </div>
-              
-              <div>
-                <h2 className="text-2xl font-bold mb-6">Service Areas</h2>
-                <p className="text-secondary mb-4">
-                  We proudly serve clients across all emirates in the UAE, providing consistent quality 
-                  and professional service regardless of location.
-                </p>
-                <div className="grid grid-cols-2 gap-2 text-sm">
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-accent rounded-full mr-2"></div>
-                    <span>Dubai</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-accent rounded-full mr-2"></div>
-                    <span>Abu Dhabi</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-accent rounded-full mr-2"></div>
-                    <span>Sharjah</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-accent rounded-full mr-2"></div>
-                    <span>Ajman</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-accent rounded-full mr-2"></div>
-                    <span>Fujairah</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-accent rounded-full mr-2"></div>
-                    <span>Ras Al Khaimah</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-accent rounded-full mr-2"></div>
-                    <span>Umm Al Quwain</span>
                   </div>
                 </div>
               </div>
