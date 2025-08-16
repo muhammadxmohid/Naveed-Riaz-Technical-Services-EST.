@@ -37,9 +37,9 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Contact</h4>
             <div className="space-y-2 text-gray-300">
-              <p className="flex items-center"><Phone className="h-4 w-4 mr-2" /> +971 XX XXX XXXX</p>
-              <p className="flex items-center"><Mail className="h-4 w-4 mr-2" /> info@naveedriazservices.com</p>
-              <p className="flex items-center"><MapPin className="h-4 w-4 mr-2" /> UAE - All Emirates</p>
+              <p className="flex items-center"><Phone className="h-4 w-4 mr-2" /> +971 55 915 6868</p>
+              <p className="flex items-center"><Mail className="h-4 w-4 mr-2" /> navriaz1978@gmail.com</p>
+              <p className="flex items-center"><MapPin className="h-4 w-4 mr-2" /> 36, Al Khatib Building, Satwa, Dubai</p>
             </div>
           </div>
         </div>

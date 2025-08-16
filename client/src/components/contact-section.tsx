@@ -82,7 +82,7 @@ export default function ContactSection() {
                 <Phone className="h-5 w-5 text-accent mr-4" />
                 <div>
                   <p className="font-semibold">Phone</p>
-                  <p className="text-blue-100">+971 XX XXX XXXX</p>
+                  <p className="text-blue-100">+971 55 915 6868</p>
                 </div>
               </div>
               
@@ -90,15 +90,15 @@ export default function ContactSection() {
                 <Mail className="h-5 w-5 text-accent mr-4" />
                 <div>
                   <p className="font-semibold">Email</p>
-                  <p className="text-blue-100">info@naveedriazservices.com</p>
+                  <p className="text-blue-100">navriaz1978@gmail.com</p>
                 </div>
               </div>
               
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 text-accent mr-4" />
                 <div>
-                  <p className="font-semibold">Service Area</p>
-                  <p className="text-blue-100">UAE - All Emirates</p>
+                  <p className="font-semibold">Address</p>
+                  <p className="text-blue-100">36, Al Khatib Building, Satwa, Dubai</p>
                 </div>
               </div>
               
@@ -168,7 +168,7 @@ export default function ContactSection() {
                     <FormItem>
                       <FormLabel>Phone Number *</FormLabel>
                       <FormControl>
-                        <Input type="tel" placeholder="+971 XX XXX XXXX" {...field} />
+                        <Input type="tel" placeholder="+971 55 915 6868" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>

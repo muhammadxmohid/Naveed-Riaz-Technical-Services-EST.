@@ -23,20 +23,20 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Phone",
-      info: "+971 XX XXX XXXX",
+      info: "+971 55 915 6868",
       description: "Call us for immediate assistance"
     },
     {
       icon: Mail,
       title: "Email",
-      info: "info@naveedriazservices.com",
+      info: "navriaz1978@gmail.com",
       description: "Send us your project details"
     },
     {
       icon: MapPin,
-      title: "Service Area",
-      info: "UAE - All Emirates",
-      description: "We serve across the United Arab Emirates"
+      title: "Address",
+      info: "36, Al Khatib Building, Satwa, Dubai",
+      description: "Our office location"
     },
     {
       icon: Clock,
