@@ -1,0 +1,495 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVEED RIAZ TECHNICAL SERVICES EST. - Professional Technical Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#64748b',
+                        accent: '#0ea5e9'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-inter bg-slate-50">
+    <!-- @COMPONENT: Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-primary">NAVEED RIAZ</h1>
+                    <p class="text-xs text-secondary">TECHNICAL SERVICES EST.</p>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="#services" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Services</a>
+                        <a href="#about" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">About</a>
+                        <a href="#contact" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="#contact" class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors">
+                        Get Quote
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- @COMPONENT: Hero Section -->
+    <section id="home" class="relative bg-gradient-to-r from-primary to-blue-700 text-white">
+        <!-- Professional contractors working on construction site -->
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080'); background-size: cover; background-position: center;"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Professional Technical Services You Can Trust
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100">
+                    Expert plumbing, electrical, HVAC, and construction services for residential and commercial properties.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#services" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center">
+                        View Our Services
+                    </a>
+                    <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors text-center">
+                        Request Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: Services Overview -->
+    <section id="services" class="py-16 lg:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Professional Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We provide comprehensive technical services with over a decade of experience in the industry.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-paint-roller text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Wallpaper & Plaster Works</h3>
+                    <p class="text-gray-600 mb-6">Professional wallpaper installation and high-quality plaster works for interior finishing.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Wallpaper fixing and removal</li>
+                        <li>• Interior plaster repairs</li>
+                        <li>• Surface preparation</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-th-large text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Floor & Wall Tiling</h3>
+                    <p class="text-gray-600 mb-6">Expert tiling services for floors and walls with precision installation and quality materials.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Ceramic and porcelain tiles</li>
+                        <li>• Natural stone installation</li>
+                        <li>• Waterproofing services</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-wrench text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Plumbing & Sanitary</h3>
+                    <p class="text-gray-600 mb-6">Complete plumbing solutions including installation, repair, and maintenance services.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Pipe installation and repair</li>
+                        <li>• Sanitary fixture installation</li>
+                        <li>• Water system maintenance</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-bolt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Electromechanical Services</h3>
+                    <p class="text-gray-600 mb-6">Professional installation and maintenance of electromechanical equipment and systems.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Equipment installation</li>
+                        <li>• Preventive maintenance</li>
+                        <li>• System troubleshooting</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-wind text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">HVAC Systems</h3>
+                    <p class="text-gray-600 mb-6">Air conditioning, ventilation, and air filtration system installation and maintenance.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• AC installation and repair</li>
+                        <li>• Ventilation systems</li>
+                        <li>• Air quality solutions</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-hammer text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Carpentry & Flooring</h3>
+                    <p class="text-gray-600 mb-6">Professional carpentry work including false ceiling, partitions, and wood flooring installation.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• False ceiling installation</li>
+                        <li>• Wood flooring services</li>
+                        <li>• Custom carpentry work</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Services Overview -->
+
+    <!-- @COMPONENT: Why Choose Us -->
+    <section class="py-16 lg:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Why Choose Our Services?</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Experienced Professionals</h3>
+                                <p class="text-gray-600">Our team brings years of expertise in technical services and construction.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Quality Guarantee</h3>
+                                <p class="text-gray-600">We stand behind our work with comprehensive warranties and quality assurance.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Competitive Pricing</h3>
+                                <p class="text-gray-600">Fair and transparent pricing with detailed quotes for all services.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">24/7 Support</h3>
+                                <p class="text-gray-600">Emergency services and ongoing support for all our completed projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <!-- Construction workers reviewing blueprints -->
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Construction workers reviewing blueprints" class="rounded-xl shadow-lg w-full h-auto" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Why Choose Us -->
+
+    <!-- @COMPONENT: About Section -->
+    <section id="about" class="py-16 lg:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <!-- Professional team of contractors with tools -->
+                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Professional team of contractors with tools" class="rounded-xl shadow-lg w-full h-auto" />
+                    <div class="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-xl shadow-lg">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold">10+</div>
+                            <div class="text-sm">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About NAVEED RIAZ TECHNICAL SERVICES</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Established as a trusted name in technical services, we have been serving residential and commercial clients with comprehensive solutions for over a decade.
+                    </p>
+                    <p class="text-gray-600 mb-8">
+                        Our commitment to excellence, attention to detail, and customer satisfaction has made us a preferred choice for clients seeking reliable technical services. From plumbing and electrical work to HVAC installation and carpentry, we deliver quality results that stand the test of time.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center p-4 bg-gray-50 rounded-lg">
+                            <div class="text-2xl font-bold text-primary mb-2">500+</div>
+                            <div class="text-sm text-gray-600">Projects Completed</div>
+                        </div>
+                        <div class="text-center p-4 bg-gray-50 rounded-lg">
+                            <div class="text-2xl font-bold text-primary mb-2">100%</div>
+                            <div class="text-sm text-gray-600">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: About Section -->
+
+    <!-- @COMPONENT: Gallery Section -->
+    <section class="py-16 lg:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Work Gallery</h2>
+                <p class="text-xl text-gray-600">See examples of our professional technical services</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Modern bathroom renovation with tiling work -->
+                <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Modern bathroom renovation with tiling work" class="rounded-lg shadow-md w-full h-64 object-cover hover:scale-105 transition-transform" />
+                <!-- Professional plumber installing pipes -->
+                <img src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Professional plumber installing pipes" class="rounded-lg shadow-md w-full h-64 object-cover hover:scale-105 transition-transform" />
+                <!-- Electrical panel installation work -->
+                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Electrical panel installation work" class="rounded-lg shadow-md w-full h-64 object-cover hover:scale-105 transition-transform" />
+                <!-- HVAC system installation in commercial building -->
+                <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="HVAC system installation in commercial building" class="rounded-lg shadow-md w-full h-64 object-cover hover:scale-105 transition-transform" />
+                <!-- Interior renovation work with modern finishes -->
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Interior renovation work with modern finishes" class="rounded-lg shadow-md w-full h-64 object-cover hover:scale-105 transition-transform" />
+                <!-- Professional carpenter working on custom woodwork -->
+                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Professional carpenter working on custom woodwork" class="rounded-lg shadow-md w-full h-64 object-cover hover:scale-105 transition-transform" />
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Gallery Section -->
+
+    <!-- @COMPONENT: Contact Section -->
+    <section id="contact" class="py-16 lg:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-600">Ready to start your project? Contact us for a free consultation and quote.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-900">Phone</p>
+                                    <p class="text-gray-600" data-mock="true">+971 XX XXX XXXX</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-900">Email</p>
+                                    <p class="text-gray-600" data-mock="true">info@naveedriaztech.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-900">Location</p>
+                                    <p class="text-gray-600" data-mock="true">Dubai, UAE</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-900">Working Hours</p>
+                                    <p class="text-gray-600">Monday - Saturday: 8:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <h4 class="font-semibold text-gray-900 mb-4">Emergency Services Available</h4>
+                        <p class="text-gray-600 mb-4">We provide 24/7 emergency services for urgent plumbing, electrical, and HVAC issues.</p>
+                        <a href="tel:+971xxxxxxxx" class="inline-flex items-center text-primary font-medium hover:text-blue-700">
+                            <i class="fas fa-phone mr-2"></i>
+                            Call Emergency Line
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Request a Quote</h3>
+                    <form class="space-y-6" data-implementation="Form should validate and submit to backend API">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter your first name" data-mock="true">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter your last name" data-mock="true">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter your email address" data-mock="true">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                            <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter your phone number" data-mock="true">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Service Required</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" data-mock="true">
+                                <option>Select a service</option>
+                                <option>Plumbing Services</option>
+                                <option>Electrical Work</option>
+                                <option>HVAC Installation</option>
+                                <option>Tiling Work</option>
+                                <option>Carpentry</option>
+                                <option>General Maintenance</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Project Details</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Describe your project requirements..." data-mock="true"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors" data-event="click:handleSubmit">
+                            Request Quote
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact Section -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">NAVEED RIAZ TECHNICAL SERVICES EST.</h3>
+                    <p class="text-gray-300 mb-6 max-w-md">
+                        Your trusted partner for comprehensive technical services. We deliver quality workmanship and reliable solutions for all your technical needs.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-white transition-colors">Plumbing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Electrical</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">HVAC</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Tiling</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 NAVEED RIAZ TECHNICAL SERVICES EST. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // TODO: Implement business logic, API calls, or state management
+        (function() {
+            // Mobile menu toggle functionality
+            const mobileMenuButton = document.querySelector('.md\\:hidden button');
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function() {
+                    // TODO: Implement mobile menu toggle
+                    console.log('Mobile menu toggle clicked');
+                });
+            }
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Form submission handler
+            const contactForm = document.querySelector('form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // TODO: Implement form validation and submission
+                    console.log('Form submitted');
+                    alert('Thank you for your inquiry! We will contact you within 24 hours.');
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
