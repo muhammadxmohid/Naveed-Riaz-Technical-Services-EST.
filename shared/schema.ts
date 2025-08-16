@@ -26,6 +26,17 @@ export const insertInquirySchema = createInsertSchema(inquiries).omit({
   message: z.string().optional(),
 });
 
+// Service mapping for WhatsApp messages
+export const serviceLabels: Record<string, string> = {
+  wallpaper: "Wallpaper & Plaster Works",
+  tiling: "Floor & Wall Tiling",
+  plumbing: "Plumbing & Sanitary",
+  electrical: "Electrical Installation",
+  hvac: "HVAC Systems",
+  carpentry: "Carpentry & Flooring",
+  multiple: "Multiple Services"
+};
+
 export type InsertInquiry = z.infer<typeof insertInquirySchema>;
 export type Inquiry = typeof inquiries.$inferSelect;
 
