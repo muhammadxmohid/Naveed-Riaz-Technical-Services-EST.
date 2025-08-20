@@ -3,20 +3,25 @@ import { insertInquirySchema, serviceLabels } from "../shared/schema";
 import { storage } from "../server/storage";
 
 async function sendEmailNotification(inquiry: any): Promise<void> {
-  const serviceId = process.env.EMAILJS_SERVICE_ID;
-  const templateId = process.env.EMAILJS_TEMPLATE_ID;
-  const publicKey = process.env.EMAILJS_PUBLIC_KEY;
-  const privateKey = process.env.EMAILJS_PRIVATE_KEY;
-
-  if (!serviceId || !templateId || !publicKey || !privateKey) {
+  const {
+    EMAILJS_SERVICE_ID,
+    EMAILJS_TEMPLATE_ID,
+    EMAILJS_PUBLIC_KEY,
+    EMAILJS_PRIVATE_KEY,
+  } = process.env;
+  if (
+    !EMAILJS_SERVICE_ID ||
+    !EMAILJS_TEMPLATE_ID ||
+    !EMAILJS_PUBLIC_KEY ||
+    !EMAILJS_PRIVATE_KEY
+  )
     return;
-  }
 
   const emailData = {
-    service_id: serviceId,
-    template_id: templateId,
-    user_id: publicKey,
-    accessToken: privateKey,
+    service_id: EMAILJS_SERVICE_ID,
+    template_id: EMAILJS_TEMPLATE_ID,
+    user_id: EMAILJS_PUBLIC_KEY,
+    accessToken: EMAILJS_PRIVATE_KEY,
     template_params: {
       to_email: "navriaz1978@gmail.com",
       from_name: "NAVEED RIAZ TECHNICAL SERVICES - Website",
@@ -29,22 +34,7 @@ async function sendEmailNotification(inquiry: any): Promise<void> {
       submission_time: new Date().toLocaleString("en-AE", {
         timeZone: "Asia/Dubai",
       }),
-      message: `New quote request received from ${inquiry.firstName} ${
-        inquiry.lastName
-      }.
-
-Customer Details:
-- Name: ${inquiry.firstName} ${inquiry.lastName}
-- Email: ${inquiry.email}
-- Phone: ${inquiry.phone}
-- Service: ${serviceLabels[inquiry.service] || inquiry.service}
-
-Project Details:
-${inquiry.message || "No additional details provided"}
-
-Submitted: ${new Date().toLocaleString("en-AE", { timeZone: "Asia/Dubai" })}
-
-Please respond to the customer within 24 hours.`,
+      message: `New quote request received from ${inquiry.firstName} ${inquiry.lastName}.`,
     },
   };
 
@@ -57,9 +47,7 @@ Please respond to the customer within 24 hours.`,
         body: JSON.stringify(emailData),
       }
     );
-  } catch {
-    // ignore email errors
-  }
+  } catch {}
 }
 
 export default async function handler(req: any, res: any) {
@@ -73,14 +61,14 @@ export default async function handler(req: any, res: any) {
       const inquiry = await storage.createInquiry(validated);
       void sendEmailNotification(inquiry);
       res.status(200).json({ success: true, inquiry });
-    } catch (error: any) {
-      if (error instanceof z.ZodError) {
+    } catch (err: any) {
+      if (err instanceof z.ZodError) {
         res
           .status(400)
           .json({
             success: false,
             message: "Validation error",
-            errors: error.errors,
+            errors: err.errors,
           });
       } else {
         res
