@@ -1,27 +1,22 @@
-import { z } from "zod";
+/// <reference types="node" />
+
 import { insertInquirySchema, serviceLabels } from "../shared/schema";
 import { storage } from "../server/storage";
 
 async function sendEmailNotification(inquiry: any): Promise<void> {
-  const {
-    EMAILJS_SERVICE_ID,
-    EMAILJS_TEMPLATE_ID,
-    EMAILJS_PUBLIC_KEY,
-    EMAILJS_PRIVATE_KEY,
-  } = process.env;
-  if (
-    !EMAILJS_SERVICE_ID ||
-    !EMAILJS_TEMPLATE_ID ||
-    !EMAILJS_PUBLIC_KEY ||
-    !EMAILJS_PRIVATE_KEY
-  )
-    return;
+  const env = (globalThis as any).process?.env || {};
+  const serviceId = env.EMAILJS_SERVICE_ID as string | undefined;
+  const templateId = env.EMAILJS_TEMPLATE_ID as string | undefined;
+  const publicKey = env.EMAILJS_PUBLIC_KEY as string | undefined;
+  const privateKey = env.EMAILJS_PRIVATE_KEY as string | undefined;
+
+  if (!serviceId || !templateId || !publicKey || !privateKey) return;
 
   const emailData = {
-    service_id: EMAILJS_SERVICE_ID,
-    template_id: EMAILJS_TEMPLATE_ID,
-    user_id: EMAILJS_PUBLIC_KEY,
-    accessToken: EMAILJS_PRIVATE_KEY,
+    service_id: serviceId,
+    template_id: templateId,
+    user_id: publicKey,
+    accessToken: privateKey,
     template_params: {
       to_email: "navriaz1978@gmail.com",
       from_name: "NAVEED RIAZ TECHNICAL SERVICES - Website",
@@ -57,38 +52,35 @@ export default async function handler(req: any, res: any) {
         typeof req.body === "string"
           ? JSON.parse(req.body || "{}")
           : req.body || {};
-      const validated = insertInquirySchema.parse(body);
-      const inquiry = await storage.createInquiry(validated);
-      void sendEmailNotification(inquiry);
-      res.status(200).json({ success: true, inquiry });
-    } catch (err: any) {
-      if (err instanceof z.ZodError) {
-        res
+      const result = insertInquirySchema.safeParse(body);
+      if (!result.success) {
+        return res
           .status(400)
           .json({
             success: false,
             message: "Validation error",
-            errors: err.errors,
+            errors: result.error.issues,
           });
-      } else {
-        res
-          .status(500)
-          .json({ success: false, message: "Internal server error" });
       }
+      const inquiry = await storage.createInquiry(result.data);
+      void sendEmailNotification(inquiry);
+      return res.status(200).json({ success: true, inquiry });
+    } catch {
+      return res
+        .status(500)
+        .json({ success: false, message: "Internal server error" });
     }
-    return;
   }
 
   if (req.method === "GET") {
     try {
       const inquiries = await storage.getInquiries();
-      res.status(200).json(inquiries);
+      return res.status(200).json(inquiries);
     } catch {
-      res
+      return res
         .status(500)
         .json({ success: false, message: "Internal server error" });
     }
-    return;
   }
 
   res.setHeader("Allow", "GET, POST");
