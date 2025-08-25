@@ -24,13 +24,14 @@ A professional website for NAVEED RIAZ TECHNICAL SERVICES EST., a Dubai-based co
 ## 🏢 Business Information
 
 - **Company**: NAVEED RIAZ TECHNICAL SERVICES EST.
-- **Location**: 36 Al Khatib Building, Satwa, Dubai, UAE
+- **Location**: 361 Al Khatib Building, Satwa, Dubai, UAE
 - **Phone**: +971 55 915 6868
 - **Email**: navriaz1978@gmail.com
 
 ## 🔧 Technical Stack
 
 ### Frontend
+
 - **React 18** with TypeScript for type-safe development
 - **Wouter** for lightweight client-side routing
 - **Tailwind CSS** for responsive styling
@@ -40,6 +41,7 @@ A professional website for NAVEED RIAZ TECHNICAL SERVICES EST., a Dubai-based co
 - **Vite** for fast development and building
 
 ### Backend
+
 - **Node.js** with Express.js framework
 - **PostgreSQL** database with Drizzle ORM
 - **TypeScript** for full-stack type safety
@@ -47,6 +49,7 @@ A professional website for NAVEED RIAZ TECHNICAL SERVICES EST., a Dubai-based co
 - **EmailJS** for email notifications
 
 ### Features
+
 - **Email Notifications** - Powered by EmailJS for quote requests
 - **Form Validation** - Client and server-side validation
 - **Responsive Design** - Mobile-first approach
@@ -74,24 +77,28 @@ A professional website for NAVEED RIAZ TECHNICAL SERVICES EST., a Dubai-based co
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js (v18 or higher)
 - npm or yarn package manager
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/muhammadxmohid/Naveed-Riaz-Technical-Services-EST.git
 cd Naveed-Riaz-Technical-Services-EST
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Set up environment variables:
-Create a `.env` file in the root directory with your EmailJS credentials:
+   Create a `.env` file in the root directory with your EmailJS credentials:
+
 ```env
 EMAILJS_SERVICE_ID=your_service_id
 EMAILJS_TEMPLATE_ID=your_template_id
@@ -100,6 +107,7 @@ EMAILJS_PRIVATE_KEY=your_private_key
 ```
 
 4. Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -111,6 +119,7 @@ The application will be available at `http://localhost:5000`
 The website uses EmailJS for sending email notifications when customers submit quote requests.
 
 ### EmailJS Configuration
+
 1. Create an account at [emailjs.com](https://emailjs.com)
 2. Add Gmail service and get your Service ID
 3. Create an email template and get Template ID
@@ -118,7 +127,9 @@ The website uses EmailJS for sending email notifications when customers submit q
 5. Add these values to your `.env` file
 
 ### Email Template Variables
+
 The email template uses these variables:
+
 - `{{customer_name}}` - Customer's full name
 - `{{customer_email}}` - Customer's email address
 - `{{customer_phone}}` - Customer's phone number
@@ -131,10 +142,12 @@ The email template uses these variables:
 The application is ready for deployment on various platforms:
 
 ### Replit Deployment
+
 - The project is configured for Replit deployment
 - Simply click the "Deploy" button in your Replit workspace
 
 ### Other Platforms
+
 - **Vercel**: Connect your GitHub repository and deploy
 - **Netlify**: Link repository and configure build settings
 - **Railway**: Connect GitHub and deploy with PostgreSQL addon
@@ -142,6 +155,7 @@ The application is ready for deployment on various platforms:
 ## 📱 Responsive Design
 
 The website is fully responsive and tested on:
+
 - Desktop computers (1920px and above)
 - Laptops (1024px - 1919px)
 - Tablets (768px - 1023px)
@@ -162,9 +176,10 @@ This project is proprietary software owned by NAVEED RIAZ TECHNICAL SERVICES EST
 ## 📞 Support
 
 For technical support or business inquiries:
+
 - **Phone**: +971 55 915 6868
 - **Email**: navriaz1978@gmail.com
-- **Address**: 36 Al Khatib Building, Satwa, Dubai, UAE
+- **Address**: 361 Al Khatib Building, Satwa, Dubai, UAE
 
 ---
 
